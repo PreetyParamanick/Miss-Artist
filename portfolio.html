@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Artist</title>
+    <link rel="shortcut icon" href="LOGO.png" type="png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Miss Artist <br>Art & Craft</a>
+        <div class="menu-toggle"></div>
+        <nav class="nav_bar">
+            <ul>
+                <li class="home"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-images"></i>Portfolio</a></li>
+                <li><a href="#"><i class="fas fa-mobile-alt"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br>
+
+
+
+
+
+
+
+<footer class="footer">
+    <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privery</a></li>
+    </ul> <br>
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a> 
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <p class="copywrite">Preety Paramanick &copy; 2021</p>
+</footer>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openfullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closefullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('.menu-toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+        })
+    })
+</script>
+</body>
+
+</html>
